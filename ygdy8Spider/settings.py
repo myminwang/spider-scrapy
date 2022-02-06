@@ -86,3 +86,14 @@ ROBOTSTXT_OBEY = True
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# 设置日志级别
+LOG_LEVEL = 'INFO'
+LOG_FILE = "./spider.log"
+
+# 禁止cookies 提高性能
+COOKIES_ENABLED = False
+
+# 设置重试次数
+RETRY_ENABLED = True  # 打开重试开关
+RETRY_TIMES = 3  # 重试次数
